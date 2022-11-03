@@ -11,15 +11,15 @@ on:
     # Allows you to run this workflow manually from the Actions ta
   workflow_dispatch:
     
-  # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  CI:
-    # The type of runner that the job will run on
-    runsp-on: ubuntu-latest
+  # A workflow run is made up of one or more jobs that can run sequentially or in parallel 
+  jobs:
+    # This workflow contains a single job called "build"
+    CI:   
+      # The type of runner that the job will run on
+      runsp-on: ubuntu-latest
     
     # Setps represent a sequence of tasks that will be executed as part of the job
-    steps:
+      steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: setup do NodeJS
