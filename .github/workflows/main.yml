@@ -54,7 +54,7 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags:
-            mesaquelemos/aula-conversao-temperatura:v1
+            mesaquelemos/aula-conversao-temperatura:${{github.run.number}}
             
             
 
